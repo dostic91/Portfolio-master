@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 3000\" \"sleepms 1000 && start http://localhost:3000/"
+  },
+  "author": "Dejan Dostic",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "gh-pages": "^3.2.3",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "concurrently": "^7.0.0",
+    "http-server": "^14.1.0",
+    "sleep-ms": "^2.0.1"
+  }
+}
